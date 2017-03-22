@@ -99,6 +99,6 @@ public class Transition<T extends Event>
 	{
 		if (t == null)
 			return false;
-		return m_label.equals(t);
+		return m_label.equals(t.m_label);
 	}
 }
