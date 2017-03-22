@@ -104,8 +104,14 @@ public class PetriNet<T extends Event>
 	 */
 	public boolean fire(Transition<T> t)
 	{
-		// TODO
-		return false;
+		int i = m_transitions.lastIndexOf(t);
+
+		if(i == -1 || !m_transitions.get(i).isEnabled())
+			return false;
+		else {
+			m_transitions.get(i).fire();
+			return true;
+		}
 	}
 	
 	/**
