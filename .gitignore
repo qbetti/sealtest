@@ -57,5 +57,8 @@ jacoco.exec
 # PDT-specific
 **/.buildpath
 
+# IDEA-specific
+**/.idea
+
 # SonarQube
 .sonar/
